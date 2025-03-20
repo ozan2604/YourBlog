@@ -1,8 +1,0 @@
-C:\Users\Ozan\Desktop\C# Projeleri\YourBlog\YourBlogApi\Client\YourBlogClient\obj\Debug\net8.0\YourBlogClient.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Ozan\Desktop\C# Projeleri\YourBlog\YourBlogApi\Client\YourBlogClient\obj\Debug\net8.0\YourBlogClient.AssemblyInfoInputs.cache
-C:\Users\Ozan\Desktop\C# Projeleri\YourBlog\YourBlogApi\Client\YourBlogClient\obj\Debug\net8.0\YourBlogClient.AssemblyInfo.cs
-C:\Users\Ozan\Desktop\C# Projeleri\YourBlog\YourBlogApi\Client\YourBlogClient\obj\Debug\net8.0\YourBlogClient.csproj.CoreCompileInputs.cache
-C:\Users\Ozan\Desktop\C# Projeleri\YourBlog\YourBlogApi\Client\YourBlogClient\obj\Debug\net8.0\YourBlogClient.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Ozan\Desktop\C# Projeleri\YourBlog\YourBlogApi\Client\YourBlogClient\obj\Debug\net8.0\YourBlogClient.RazorAssemblyInfo.cache
-C:\Users\Ozan\Desktop\C# Projeleri\YourBlog\YourBlogApi\Client\YourBlogClient\obj\Debug\net8.0\YourBlogClient.RazorAssemblyInfo.cs
-C:\Users\Ozan\Desktop\C# Projeleri\YourBlog\YourBlogApi\Client\YourBlogClient\obj\Debug\net8.0\YourBlogClient.sourcelink.json
