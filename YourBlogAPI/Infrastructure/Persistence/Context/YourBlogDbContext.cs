@@ -1,5 +1,7 @@
 ﻿using Domain.Entities;
 using Domain.Entities.Common;
+using Domain.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -9,15 +11,17 @@ using System.Threading.Tasks;
 
 namespace Persistence.Context
 {
-    public class YourBlogDbContext : DbContext
+    public class YourBlogDbContext : IdentityDbContext<AppUser, AppRole, string>    
     {
         public YourBlogDbContext(DbContextOptions options) : base(options) {  }
 
-        DbSet<Service> Services { get; set; }
-        DbSet<About> Abouts { get; set; }
-        DbSet<Blog> Blogs { get; set; } 
-        DbSet<Contact> Contacts { get; set; }   
-        DbSet<Gallery> galleries { get; set; }
+        public DbSet<AppUser> AppUsers { get; set; }
+        public DbSet<AppRole> AppRoles { get; set; }        
+        public DbSet<Service> Services { get; set; }
+        public DbSet<About> Abouts { get; set; }
+        public DbSet<Blog> Blogs { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
+        public DbSet<Gallery> galleries { get; set; }
 
         //Inspector mekanizmasıdır. Base entityde bulunan fix şeyler boş olsa da dolu olsada burda doldurulup veritabanına öyle yönlendiriliyor..
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)

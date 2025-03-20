@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{B70448B4-7762-42CC-B950-BFF4905FA75A}"
 EndProject
@@ -18,6 +18,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Infrastructure\Persistence\Persistence.csproj", "{0AABFB20-2FF3-44CF-8B38-67E9B2FF86B8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "Presentation\WebAPI\WebAPI.csproj", "{9411ED1E-ECC0-483C-8AD9-33D8AEA11B65}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Front-end", "Front-end", "{DDB5201D-28D4-4532-9E86-C9D6798CB1B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Front-end\Client\Client.csproj", "{489DB133-3F4F-45D4-B15B-F547DB521F84}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,10 @@ Global
 		{9411ED1E-ECC0-483C-8AD9-33D8AEA11B65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9411ED1E-ECC0-483C-8AD9-33D8AEA11B65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9411ED1E-ECC0-483C-8AD9-33D8AEA11B65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{489DB133-3F4F-45D4-B15B-F547DB521F84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{489DB133-3F4F-45D4-B15B-F547DB521F84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{489DB133-3F4F-45D4-B15B-F547DB521F84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{489DB133-3F4F-45D4-B15B-F547DB521F84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,5 +63,6 @@ Global
 		{4ED2BA63-8CAF-4FB6-814E-1D3D1A06FAA8} = {9D8BBC49-9A23-47BD-955E-10F793B33F27}
 		{0AABFB20-2FF3-44CF-8B38-67E9B2FF86B8} = {9D8BBC49-9A23-47BD-955E-10F793B33F27}
 		{9411ED1E-ECC0-483C-8AD9-33D8AEA11B65} = {3554C073-3E73-480E-A9A5-FABC45028F3B}
+		{489DB133-3F4F-45D4-B15B-F547DB521F84} = {DDB5201D-28D4-4532-9E86-C9D6798CB1B0}
 	EndGlobalSection
 EndGlobal
