@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AJ9u4ivv5E0=",
+  "dgSpecHash": "AP8faV6f+nk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ozan\\Desktop\\C# Projeleri\\YourBlog\\YourBlogAPI\\Core\\Application\\Application.csproj",
+  "projectFilePath": "C:\\Users\\Ozan\\Desktop\\C# Projeleri\\YourBlog\\YourBlogApi\\Core\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ozan\\.nuget\\packages\\mediatr\\12.4.1\\mediatr.12.4.1.nupkg.sha512",
     "C:\\Users\\Ozan\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",

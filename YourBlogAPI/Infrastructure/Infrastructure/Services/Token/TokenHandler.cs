@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -42,7 +43,14 @@ namespace Infrastructure.Services.Token
 
             JwtSecurityTokenHandler tokenHandler = new();   
             token.AccessToken = tokenHandler.WriteToken(securityToken);
+
+            //string refreshToken = CreateRefreshToken(); 
+            //token.RefreshToken = CreateRefreshToken();
+
+
             return token;   
         }
+
+        
     }
 }

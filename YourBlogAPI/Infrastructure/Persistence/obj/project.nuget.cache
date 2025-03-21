@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2py+R1jHero=",
+  "dgSpecHash": "mtlsjjSizDI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ozan\\Desktop\\C# Projeleri\\YourBlog\\YourBlogAPI\\Infrastructure\\Persistence\\Persistence.csproj",
+  "projectFilePath": "C:\\Users\\Ozan\\Desktop\\C# Projeleri\\YourBlog\\YourBlogApi\\Infrastructure\\Persistence\\Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ozan\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Ozan\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

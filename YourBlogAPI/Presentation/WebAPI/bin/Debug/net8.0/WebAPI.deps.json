@@ -14,6 +14,7 @@
           "Microsoft.EntityFrameworkCore.Design": "9.0.3",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.3",
           "Persistence": "1.0.0",
+          "SignalR": "1.0.0",
           "Swashbuckle.AspNetCore": "6.6.2"
         },
         "runtime": {
@@ -1465,6 +1466,17 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "SignalR/1.0.0": {
+        "dependencies": {
+          "Application": "1.0.0"
+        },
+        "runtime": {
+          "SignalR.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -2323,6 +2335,11 @@
       "sha512": ""
     },
     "Persistence/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SignalR/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

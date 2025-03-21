@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ozan\\Desktop\\C# Projeleri\\YourBlog\\YourBlogAPI\\Core\\Domain\\Domain.csproj": {}
+    "C:\\Users\\Ozan\\Desktop\\C# Projeleri\\YourBlog\\YourBlogApi\\Core\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ozan\\Desktop\\C# Projeleri\\YourBlog\\YourBlogAPI\\Core\\Domain\\Domain.csproj": {
+    "C:\\Users\\Ozan\\Desktop\\C# Projeleri\\YourBlog\\YourBlogApi\\Core\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ozan\\Desktop\\C# Projeleri\\YourBlog\\YourBlogAPI\\Core\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Ozan\\Desktop\\C# Projeleri\\YourBlog\\YourBlogApi\\Core\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Ozan\\Desktop\\C# Projeleri\\YourBlog\\YourBlogAPI\\Core\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\Ozan\\Desktop\\C# Projeleri\\YourBlog\\YourBlogApi\\Core\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Ozan\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Ozan\\Desktop\\C# Projeleri\\YourBlog\\YourBlogAPI\\Core\\Domain\\obj\\",
         "projectStyle": "PackageReference",

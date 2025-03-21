@@ -3,6 +3,7 @@ using Infrastructure;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Persistence;
+using SignalR;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,6 +18,12 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddPersistenceService();
 builder.Services.AddApplicationService();
 builder.Services.AddInfrustructureService();
+builder.Services.AddSignalRService();
+
+builder.Services.AddCors(options => options.AddDefaultPolicy(policy => policy.WithOrigins("http://localhost:4200", "https://localhost:4200/")
+.AllowAnyHeader()
+.AllowAnyMethod()
+.AllowCredentials()));  //CORS POLÝTÝKASI : SADECE 4200 DEN GELEN ÝSTEKLERÝ KABUL ET
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer("Admin", Option =>
@@ -31,6 +38,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidAudience = builder.Configuration["Token:Audience"],
             ValidIssuer = builder.Configuration["Token:Issuer"],
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Token:SecurityKey"])),
+            LifetimeValidator = (notBefore, expires, securityToken, validationParameters) => expires != null? expires > DateTime.UtcNow : false 
         };
     });
 
@@ -48,5 +56,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.MapHubs(); // biz ekliyoruz
 
 app.Run();

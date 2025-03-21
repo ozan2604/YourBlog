@@ -1,4 +1,5 @@
-﻿using Application.Repositories;
+﻿using Application.Hubs;
+using Application.Repositories;
 using Application.Repositories.BlogRepositories;
 using Domain.Entities;
 using MediatR;
@@ -13,10 +14,12 @@ namespace Application.Features.Meadiatr.Commands.BlogCommands.CreateBlog
     public class CreateBlogCommandHandler : IRequestHandler<CreateBlogCommandRequest, CreateBlogCommandResponse>
     {
         private readonly IBlogWriteRepository _writeRepository;
+        private readonly IBlogHubService _productHubService;
 
-        public CreateBlogCommandHandler(IBlogWriteRepository writeRepository)
+        public CreateBlogCommandHandler(IBlogWriteRepository writeRepository, IBlogHubService productHubService)
         {
             _writeRepository = writeRepository;
+            _productHubService = productHubService;
         }
 
         public async Task<CreateBlogCommandResponse> Handle(CreateBlogCommandRequest request, CancellationToken cancellationToken)
@@ -31,6 +34,9 @@ namespace Application.Features.Meadiatr.Commands.BlogCommands.CreateBlog
             });
 
             await _writeRepository.SaveAsync();
+
+            await _productHubService.BlogAddedMessageAsync($"{request.Title} adında blog eklenmiştir");
+
             return new CreateBlogCommandResponse()
             {
                 Message = "Blog Created Successfully"
